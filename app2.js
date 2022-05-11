@@ -19,3 +19,13 @@ console.log(cowsay.say({
     e : "oO",
     T : "U "
 }));
+
+let sentences = ['Hello', 'World', 'I\'m a cow.'];
+
+sentences.forEach((sentence) => {
+    console.log(cowsay.say({
+        text : sentence,
+        e : "^^",
+        T : "U "
+    }));
+});
