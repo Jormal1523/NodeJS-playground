@@ -4,4 +4,4 @@ const hello = require('./hello');
 // hello.say();
 hello.sayHello();
 hello.sayGoodnight();
-console.log(hello.title)
+console.log(hello.title) 

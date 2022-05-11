@@ -16,7 +16,7 @@ module.exports = {
     title: 'Hello Title'
 };
 
-//JS remarks
+//JS remarks 
 module.exports = {
     sayHello,
     sayGoodnight,
