@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "start": "nodemon app2.js",
+    "start": "nodemon express.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "cowsay": "^1.5.0"
+    "cowsay": "^1.5.0",
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
