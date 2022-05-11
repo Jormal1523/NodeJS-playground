@@ -22,3 +22,5 @@ module.exports = {
     sayGoodnight,
     title: 'Hello Title'
 };
+
+console.log('module',module);
