@@ -1,0 +1,31 @@
+<%- include('./includes/header')%>      <!-- <% -include%> 可以連接可以連接使用模板片段 -->
+<link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <%- include('./includes/navbar') %>
+    <h1>Home page</h1>
+
+    <div class="container-md">
+        <h2><%= pageTitle%></h2>
+        <div class="row">
+            <% if(products.length>0){%>
+                <% products.forEach((product) => { %>
+                    <div class="col-12 col-md-6 col-lg-4 g-3 ">
+                    <div class="card h-100">
+                        <img src="<%= product.imageUrl %>" class="card-img-top" alt="<%= product.title %>">
+                        <div class="card-body">
+                          <h5 class="card-title"><%= product.title %></h5>
+                          <p class="card-text"><%= product.description %></p>
+                          <a href="#" class="btn btn-primary">詳細資訊</a>
+                        </div>
+                      </div>
+                    </div>
+                <% }) %>
+            <% }else{ %>
+                <h1>尚無商品</h1>
+            <% }%>   
+        </div>
+        <img src="/images/logo.png" alt="">
+
+    </div>
+<%- include('./includes/footer') %>

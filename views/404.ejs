@@ -1,0 +1,25 @@
+<%- include('./includes/header')%> <!-- <% -include%> 可以連接可以連接使用模板片段 -->
+<!-- <style>
+        body {
+            background-image: url("/images/404.jpeg") ;
+        }
+    </style> -->
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <!-- <h1><%= pageTitle%></h1> -->
+
+    <%- include('./includes/navbar') %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-danger mt-5" role="alert">
+                    看來發生了點錯誤 :(
+                  </div>
+                <img src="/images/404.jpeg" alt="404" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <a href="/">回首頁</a>
+<%- include('./includes/footer') %>
