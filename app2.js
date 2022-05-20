@@ -31,6 +31,7 @@ console.log(hello.title);
 // });
 const url = require('url');
 
+console.log(url.parse('https://www.youtube.com/watch?v=ssZTiB8yg94&t=43s'));
 
 const server = http.createServer((req, res) => {
 	// console.log('第一個參數是瀏覽器對 web server 的 request', req);
